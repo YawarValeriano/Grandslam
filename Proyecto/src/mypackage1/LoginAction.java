@@ -27,13 +27,14 @@ public class LoginAction extends Action
     String contraseña = login.getContraseña();
     if ( usuario.equals("admin") && contraseña.equals("123")) 
     {
-      System.out.println("Exito");
+      return mapping.findForward("inicio");
     }
     else 
     {
       System.out.println("Fracaso");
+      return mapping.findForward("success");
     }
-    return mapping.findForward("success");
+
   }
 
 
