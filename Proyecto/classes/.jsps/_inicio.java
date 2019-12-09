@@ -44,7 +44,8 @@ public class _inicio extends com.orionserver.http.OrionHttpJspPage {
 
       __ojsp_s_out.write(__jsp_StaticText.text[0]);
       __ojsp_s_out.write(__jsp_StaticText.text[1]);
-      /*@lineinfo:translated-code*//*@lineinfo:6^1*/      {
+      __ojsp_s_out.write(__jsp_StaticText.text[2]);
+      /*@lineinfo:translated-code*//*@lineinfo:7^1*/      {
         org.apache.struts.taglib.bean.MessageTag __jsp_taghandler_1=(org.apache.struts.taglib.bean.MessageTag)OracleJspRuntime.getTagHandler(pageContext,org.apache.struts.taglib.bean.MessageTag.class,"org.apache.struts.taglib.bean.MessageTag key");
         __jsp_taghandler_1.setParent(null);
         __jsp_taghandler_1.setKey("boot.inicio");
@@ -59,23 +60,41 @@ public class _inicio extends com.orionserver.http.OrionHttpJspPage {
         OracleJspRuntime.releaseTagHandler(pageContext,__jsp_taghandler_1);
       }
       /*@lineinfo:generated-code*/
-      __ojsp_s_out.write(__jsp_StaticText.text[2]);
-      /*@lineinfo:translated-code*//*@lineinfo:40^1*/      {
-        org.apache.struts.taglib.bean.MessageTag __jsp_taghandler_2=(org.apache.struts.taglib.bean.MessageTag)OracleJspRuntime.getTagHandler(pageContext,org.apache.struts.taglib.bean.MessageTag.class,"org.apache.struts.taglib.bean.MessageTag key");
+      __ojsp_s_out.write(__jsp_StaticText.text[3]);
+      /*@lineinfo:translated-code*//*@lineinfo:13^1*/      {
+        org.apache.struts.taglib.html.FormTag __jsp_taghandler_2=(org.apache.struts.taglib.html.FormTag)OracleJspRuntime.getTagHandler(pageContext,org.apache.struts.taglib.html.FormTag.class,"org.apache.struts.taglib.html.FormTag action");
         __jsp_taghandler_2.setParent(null);
-        __jsp_taghandler_2.setKey("boot.script");
+        __jsp_taghandler_2.setAction("/menu");
         __jsp_tag_starteval=__jsp_taghandler_2.doStartTag();
         if (OracleJspRuntime.checkStartTagEval(__jsp_tag_starteval))
         {
           do {
-          } while (__jsp_taghandler_2.doAfterBody()==javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN);
+            /*@lineinfo:generated-code*/
+            __ojsp_s_out.write(__jsp_StaticText.text[4]);
+          /*@lineinfo:translated-code*//*@lineinfo:13^27*/          } while (__jsp_taghandler_2.doAfterBody()==javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN);
         }
         if (__jsp_taghandler_2.doEndTag()==javax.servlet.jsp.tagext.Tag.SKIP_PAGE)
           return;
         OracleJspRuntime.releaseTagHandler(pageContext,__jsp_taghandler_2);
       }
       /*@lineinfo:generated-code*/
-      __ojsp_s_out.write(__jsp_StaticText.text[3]);
+      __ojsp_s_out.write(__jsp_StaticText.text[5]);
+      /*@lineinfo:translated-code*//*@lineinfo:51^1*/      {
+        org.apache.struts.taglib.bean.MessageTag __jsp_taghandler_3=(org.apache.struts.taglib.bean.MessageTag)OracleJspRuntime.getTagHandler(pageContext,org.apache.struts.taglib.bean.MessageTag.class,"org.apache.struts.taglib.bean.MessageTag key");
+        __jsp_taghandler_3.setParent(null);
+        __jsp_taghandler_3.setKey("boot.script");
+        __jsp_tag_starteval=__jsp_taghandler_3.doStartTag();
+        if (OracleJspRuntime.checkStartTagEval(__jsp_tag_starteval))
+        {
+          do {
+          } while (__jsp_taghandler_3.doAfterBody()==javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN);
+        }
+        if (__jsp_taghandler_3.doEndTag()==javax.servlet.jsp.tagext.Tag.SKIP_PAGE)
+          return;
+        OracleJspRuntime.releaseTagHandler(pageContext,__jsp_taghandler_3);
+      }
+      /*@lineinfo:generated-code*/
+      __ojsp_s_out.write(__jsp_StaticText.text[6]);
 
 
     }
@@ -94,16 +113,22 @@ public class _inicio extends com.orionserver.http.OrionHttpJspPage {
 
   }
   private static class __jsp_StaticText {
-    private static final byte text[][]=new byte[4][];
+    private static final byte text[][]=new byte[7][];
     static {
       try {
       text[0] = 
       "\r\n".getBytes("Cp1252");
       text[1] = 
-      "\r\n<!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n".getBytes("Cp1252");
+      "\r\n".getBytes("Cp1252");
       text[2] = 
-      "\r\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=windows-1252\">\r\n<title>\r\nInicio\r\n</title>\r\n</head>\r\n<nav class=\"navbar navbar-expand-lg navbar-light bg-light\">\r\n  <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarTogglerDemo03\" aria-controls=\"navbarTogglerDemo03\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\r\n    <span class=\"navbar-toggler-icon\"></span>\r\n  </button>\r\n  <a class=\"navbar-brand\" href=\"#\">Grand Slam</a>\r\n\r\n  <div class=\"collapse navbar-collapse\" id=\"navbarTogglerDemo03\">\r\n    <ul class=\"navbar-nav mr-auto mt-2 mt-lg-0\">\r\n      <li class=\"nav-item active\">\r\n        <a class=\"nav-link\" href=\"#\">Categorias <span class=\"sr-only\">(current)</span></a>\r\n      </li>\r\n      <li class=\"nav-item\">\r\n        <a class=\"nav-link\" href=\"#\">Paises</a>\r\n      </li>\r\n      <li class=\"nav-item\">\r\n        <a class=\"nav-link\" href=\"#\">Modalidades</a>\r\n      </li>\r\n      <li class=\"nav-item\">\r\n        <a class=\"nav-link\" href=\"#\">Equipos</a>\r\n      </li>\r\n      <li class=\"nav-item\">\r\n        <a class=\"nav-link\" href=\"#\">por vErse</a>\r\n      </li>\r\n    </ul>\r\n  </div>\r\n</nav>\r\n<body>\r\nhola Mundo\r\n".getBytes("Cp1252");
+      "\r\n<!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n".getBytes("Cp1252");
       text[3] = 
+      "\r\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=windows-1252\">\r\n<title>\r\nInicio\r\n</title>\r\n</head>\r\n".getBytes("Cp1252");
+      text[4] = 
+      "\r\n  <nav class=\"navbar navbar-expand-lg navbar-light bg-light\">\r\n    <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarTogglerDemo03\" aria-controls=\"navbarTogglerDemo03\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\r\n      <span class=\"navbar-toggler-icon\"></span>\r\n    </button>\r\n    <a class=\"navbar-brand\" href=\"#\">Grand Slam</a>\r\n\r\n    <div class=\"collapse navbar-collapse\" id=\"navbarTogglerDemo03\">\r\n      <ul class=\"navbar-nav mr-auto mt-2 mt-lg-0\">\r\n        <li class=\"nav-item active\">\r\n          <a class=\"nav-link\" href=\"#\">Torneos</a>\r\n        </li>\r\n        <li class=\"nav-item\">\r\n          <a class=\"nav-link\" href=\"#\">Partidos</a>\r\n        </li>\r\n        <li class=\"nav-item\">\r\n          <a class=\"nav-link\" href=\"#\">Resultados</a>\r\n        </li>\r\n        <li class=\"nav-item\">\r\n          <a class=\"nav-link\" href=\"#\">Equipos</a>\r\n        </li>\r\n        <li class=\"nav-item dropdown\">\r\n          <a class=\"nav-link dropdown-toggle\" href=\"#\" id=\"navbarDropdown\" role=\"button\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">\r\n            Dropdown\r\n          </a>\r\n          <div class=\"dropdown-menu\" aria-labelledby=\"navbarDropdown\">\r\n            <a class=\"dropdown-item\" href=\"#\">Action</a>\r\n            <a class=\"dropdown-item\" href=\"#\">Another action</a>\r\n            <div class=\"dropdown-divider\"></div>\r\n            <a class=\"dropdown-item\" href=\"#\">Something else here</a>\r\n          </div>\r\n        </li>\r\n      </ul>\r\n    </div>\r\n  </nav>\r\n".getBytes("Cp1252");
+      text[5] = 
+      "\r\n<body>\r\nhola Mundo\r\n".getBytes("Cp1252");
+      text[6] = 
       "\r\n</body>\r\n</html>\r\n".getBytes("Cp1252");
       }
       catch (Throwable th) {
