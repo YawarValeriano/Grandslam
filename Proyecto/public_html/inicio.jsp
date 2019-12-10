@@ -10,41 +10,64 @@
 Inicio
 </title>
 </head>
-<html:form>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+<html:form action="/menu">
+  <nav class="navbar navbar-dark bg-primary navbar-expand-lg">
+    <a class="navbar-brand" href="#">GrandSlam</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <a class="navbar-brand" href="#">Grand Slam</a>
-
-    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Torneos</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Partidos</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Resultados</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Equipos</a>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <ul class="navbar-nav">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Torneos
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <html:submit property="opcionNavBar" value="Ver Torneos" styleClass="dropdown-item"/>
+            <html:submit property="opcionNavBar" value="Nuevo Torneo" styleClass="dropdown-item"/>
+          </div>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Dropdown
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Árbitros
           </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Something else here</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <html:submit property="opcionNavBar" value="Ver Árbitros" styleClass="dropdown-item"/>
+            <html:submit property="opcionNavBar" value="Nuevo Árbitro" styleClass="dropdown-item"/>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Equipos
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <html:submit property="opcionNavBar" value="Ver Equipos" styleClass="dropdown-item"/>
+            <html:submit property="opcionNavBar" value="Nuevo Equipo" styleClass="dropdown-item"/>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Partidos
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <html:submit property="opcionNavBar" value="Ver Partidos" styleClass="dropdown-item"/>
           </div>
         </li>
       </ul>
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Bienvenido Admin
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <html:submit property="opcionNavBar" value="Salir" styleClass="dropdown-item" />
+            </div>
+          </li>
+        </ul>
+
     </div>
   </nav>
+
 </html:form>
 <body>
 hola Mundo

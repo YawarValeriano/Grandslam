@@ -23,26 +23,38 @@ public class InicioAction extends Action
   {
     InicioForm navBar = (InicioForm) form;
     String opcion = navBar.getOpcionNavBar();
-    switch (opcion)
+    if (opcion.equals("Ver Torneos"))
     {
-      case "listaTorneos":
-
-      break;
-      case: "nuevoTorneo":
-      break;
-      case: "listaPartidos":
-      break;
-      case: "nuevoPartido":
-      break;
-      case: "listaResultados":
-      break;
-      case: "nuevoResultado":
-      break;
-      case: "listaEquipos":
-      break;
-      case: "nuevoEquipo":
-      break;
+      return mapping.findForward("inicio");
     }
-    return mapping.findForward("success");
+    if (opcion.equals("Nuevo Torneo"))
+    {
+      return mapping.findForward("nuevoTorneo");
+    }
+    if (opcion.equals("Ver Árbitros"))
+    {
+      return mapping.findForward("arbitros");
+    }
+    if (opcion.equals("Nuevo Árbitro"))
+    {
+      return mapping.findForward("nuevoArbitro");
+    }
+    if (opcion.equals("Ver Equipos"))
+    {
+      return mapping.findForward("equipos"); 
+    }
+    if (opcion.equals("Nuevo Equipo"))
+    {
+      return mapping.findForward("nuevoEquipo");
+    }
+    if (opcion.equals("Ver Partidos"))
+    {
+      return mapping.findForward("partidos"); 
+    }
+    if (opcion.equals("Salir"))
+    {
+      return mapping.findForward("login");
+    }
+    return mapping.findForward("login");
   }
 }
