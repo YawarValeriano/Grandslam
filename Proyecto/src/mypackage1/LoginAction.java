@@ -9,6 +9,12 @@ import java.io.IOException;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.sql.*;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import javax.naming.NamingException;
+import oracle.jdbc.*;
+import java.util.*;
 
 public class LoginAction extends Action 
 {
@@ -27,7 +33,54 @@ public class LoginAction extends Action
     String contraseña = login.getContraseña();
     if ( usuario.equals("admin") && contraseña.equals("123")) 
     {
-      return mapping.findForward("inicio");
+      Connection cn = null;
+      ConnectDB conn =new ConnectDB();
+      ResultSet rsConsulta = null;
+      try
+      {
+        cn = conn.conexion;
+        String cadena = "select a.id_torneo as torneo,b.anio as gestion,c.granbetraña,c.francia,c.usa,c.australia  from g8_torneo a,g8_gestion b,g8_lugar c where a.lugar_id_lugar = c.id_lugar and a.gestion_id_gestion = b.id_gestion  order by 1";
+        rsConsulta = conn.getData(cadena);
+        ArrayList items = new ArrayList();
+        while (rsConsulta.next())
+        {
+          String aux="";
+          ClaseTorneo item = new ClaseTorneo();
+          item.setTorneo(rsConsulta.getString("torneo"));
+          item.setGestion(rsConsulta.getString("gestion"));
+          int i = Integer.parseInt(rsConsulta.getString("granbetraña"));
+          if(i>0){
+            aux="Gran Betrana";
+          }
+          int j = Integer.parseInt(rsConsulta.getString("francia"));
+          if(j>0){
+            aux="Francia";
+          }
+          int k = Integer.parseInt(rsConsulta.getString("australia"));
+          if(k>0){
+            aux="Australia";
+          }
+          int l = Integer.parseInt(rsConsulta.getString("usa"));
+          if(l>0){
+            aux="USA";
+          }
+          item.setLugar(aux);
+          items.add(item);
+        }
+        InicioForm f = new InicioForm();
+        f.setTablaTorneos(items);
+        request.getSession().setAttribute("torneos",f);
+        return mapping.findForward("inicio");
+      }	
+      catch(Exception e)
+      {
+        e.printStackTrace();
+        return (mapping.findForward("error"));
+      }
+      finally
+      {
+        conn.closeConnection();	
+      }
     }
     else 
     {

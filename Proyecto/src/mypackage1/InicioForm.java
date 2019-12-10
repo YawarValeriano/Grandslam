@@ -4,10 +4,12 @@ import org.apache.struts.action.ActionErrors;
 import org.apache.struts.action.ActionError;
 import org.apache.struts.action.ActionMapping;
 import javax.servlet.http.HttpServletRequest;
+import java.util.ArrayList;
 
 public class InicioForm extends ActionForm 
 {
   String opcionNavBar;
+  ArrayList tablaTorneos;
 
   /**
    * Reset all properties to their default values.
@@ -39,5 +41,15 @@ public class InicioForm extends ActionForm
   public void setOpcionNavBar(String newOpcionNavBar)
   {
     opcionNavBar = newOpcionNavBar;
+  }
+
+  public ArrayList getTablaTorneos()
+  {
+    return tablaTorneos;
+  }
+
+  public void setTablaTorneos(ArrayList newTablaTorneos)
+  {
+    tablaTorneos = newTablaTorneos;
   }
 }

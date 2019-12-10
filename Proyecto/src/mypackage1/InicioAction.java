@@ -36,10 +36,8 @@ public class InicioAction extends Action
     {
       try
       {
-        //select * from tab where TNAME like '%G8%'
-    
         cn = conn.conexion;
-        String cadena = "select a.id_torneo as torneo,b.anio as gestion,c.granbetrana,c.francia,c.usa,c.australia  from g8_torneo a,g8_gestion b,g8_lugar order by 1";
+        String cadena = "select a.id_torneo as torneo,b.anio as gestion,c.granbetraña,c.francia,c.usa,c.australia  from g8_torneo a,g8_gestion b,g8_lugar c where a.lugar_id_lugar = c.id_lugar and a.gestion_id_gestion = b.id_gestion  order by 1";
         rsConsulta = conn.getData(cadena);
         ArrayList items = new ArrayList();
         while (rsConsulta.next())
@@ -48,7 +46,7 @@ public class InicioAction extends Action
           ClaseTorneo item = new ClaseTorneo();
           item.setTorneo(rsConsulta.getString("torneo"));
           item.setGestion(rsConsulta.getString("gestion"));
-          int i = Integer.parseInt(rsConsulta.getString("granbetrana"));
+          int i = Integer.parseInt(rsConsulta.getString("granbetraña"));
           if(i>0){
             aux="Gran Betrana";
           }
@@ -66,11 +64,10 @@ public class InicioAction extends Action
           }
           item.setLugar(aux);
           items.add(item);
-        }  
-        ActionFormTorneo f = new ActionFormTorneo();
-        f.setTabla(items);
-        System.out.println(f);
-        request.getSession().setAttribute("yyy",f);
+        }
+        InicioForm f = new InicioForm();
+        f.setTablaTorneos(items);
+        request.getSession().setAttribute("torneos",f);
         return mapping.findForward("inicio");
       }	
       catch(Exception e)
