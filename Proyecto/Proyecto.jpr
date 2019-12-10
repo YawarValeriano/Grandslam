@@ -33,7 +33,6 @@
          <encoding>windows-1252</encoding>
       </Item>
       <Item class="oracle.jdeveloper.model.JavaSourceNode">
-<<<<<<< HEAD
          <URL path="src/mypackage1/InicioForm.java"/>
       </Item>
       <Item class="oracle.jdeveloper.model.JavaSourceNode">
@@ -62,7 +61,8 @@
       <Item class="oracle.jdeveloper.model.JspSourceNode">
          <URL path="public_html/partidos.jsp"/>
          <encoding>windows-1252</encoding>
-=======
+      </Item>
+      <Item class="oracle.jdeveloper.model.JspSourceNode">
          <URL path="src/mypackage1/ConnectDB.java"/>
       </Item>
       <Item class="oracle.jdeveloper.model.JavaSourceNode">
@@ -73,7 +73,6 @@
       </Item>
       <Item class="oracle.jdeveloper.model.JavaSourceNode">
          <URL path="src/mypackage1/ClaseTorneo.java"/>
->>>>>>> d4ffd1fb6583cb5440697803bb8a93884cc1a333
       </Item>
    </listOfChildren>
    <ownerMap/>

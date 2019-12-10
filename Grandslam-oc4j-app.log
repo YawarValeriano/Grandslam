@@ -870,3 +870,73 @@ com.evermind.server.http.HttpIOException: Connection aborted by peer: socket wri
 10-12-19 01:43 PM Grandslam-Proyecto-webapp: JDevOJSP: init
 10-12-19 01:43 PM Grandslam-Proyecto-webapp: action: init
 10-12-19 01:43 PM Grandslam-Proyecto-webapp: 9.0.3.0.0 Started
+10-12-19 02:08 PM Started
+10-12-19 02:08 PM Grandslam-Proyecto-webapp: JDevOJSP: init
+10-12-19 02:09 PM Grandslam-Proyecto-webapp: action: init
+10-12-19 02:09 PM Grandslam-Proyecto-webapp: Error preloading servlet
+javax.servlet.UnavailableException: Parsing error processing resource path /WEB-INF/struts-config.xml
+	org.apache.struts.config.ApplicationConfig org.apache.struts.action.ActionServlet.initApplicationConfig(java.lang.String, java.lang.String)
+		ActionServlet.java:866
+	void org.apache.struts.action.ActionServlet.init()
+		ActionServlet.java:455
+	void javax.servlet.GenericServlet.init(javax.servlet.ServletConfig)
+		GenericServlet.java:258
+	com.evermind.server.http.ServletInstanceInfo com.evermind.server.http.HttpApplication.loadServlet(com.evermind.util.ByteString)
+		HttpApplication.java:1956
+	com.evermind.server.http.ServletInstanceInfo com.evermind.server.http.HttpApplication.findServlet(com.evermind.util.ByteString)
+		HttpApplication.java:4355
+	void com.evermind.server.http.HttpApplication.initPreloadServlets()
+		HttpApplication.java:4455
+	void com.evermind.server.http.HttpApplication.initDynamic(com.evermind.server.http.HttpApplicationConfig)
+		HttpApplication.java:662
+	void com.evermind.server.http.HttpApplication.<init>(com.evermind.server.Application, com.evermind.server.http.HttpSite, com.evermind.server.http.HttpApplicationConfig, java.lang.String, java.lang.String, boolean)
+		HttpApplication.java:435
+	com.evermind.server.http.HttpApplication com.evermind.server.Application.getHttpApplication(java.lang.String, java.lang.String, boolean, long, com.evermind.server.http.HttpSite, boolean)
+		Application.java:695
+	com.evermind.server.http.HttpApplication com.evermind.server.http.HttpServer.getHttpApplication(com.evermind.server.http.HttpApplicationReference, com.evermind.server.http.HttpSite)
+		HttpServer.java:676
+	com.evermind.server.http.HttpApplication com.evermind.server.http.HttpSite.getApplication(com.evermind.util.ByteString)
+		HttpSite.java:388
+	boolean com.evermind.server.http.HttpRequestHandler.processRequest(com.evermind.server.ApplicationServerThread, com.evermind.server.http.EvermindHttpServletRequest, com.evermind.server.http.EvermindHttpServletResponse, java.io.InputStream, java.io.OutputStream, boolean)
+		HttpRequestHandler.java:407
+	void com.evermind.server.http.HttpRequestHandler.run(java.lang.Thread)
+		HttpRequestHandler.java:259
+	void com.evermind.server.http.HttpRequestHandler.run()
+		HttpRequestHandler.java:106
+	void EDU.oswego.cs.dl.util.concurrent.PooledExecutor$Worker.run()
+		PooledExecutor.java:803
+	void java.lang.Thread.run()
+		Thread.java:484
+10-12-19 02:09 PM Grandslam-Proyecto-webapp: 9.0.3.0.0 Started
+10-12-19 02:09 PM Grandslam-Proyecto-webapp: Servlet error
+javax.servlet.jsp.JspException: Cannot find message resources under key org.apache.struts.action.MESSAGE
+	java.lang.String org.apache.struts.util.RequestUtils.message(javax.servlet.jsp.PageContext, java.lang.String, java.lang.String, java.lang.String, java.lang.Object[])
+		RequestUtils.java:819
+	int org.apache.struts.taglib.bean.MessageTag.doStartTag()
+		MessageTag.java:295
+	void _login._jspService(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)
+		login.jsp:6
+	void com.orionserver[Oracle9iAS (9.0.3.0.0) Containers for J2EE].http.OrionHttpJspPage.service(javax.servlet.ServletRequest, javax.servlet.ServletResponse)
+		OrionHttpJspPage.java:56
+	void oracle.jsp.runtimev2.JspPageTable.service(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse, java.lang.String)
+		JspPageTable.java:317
+	void oracle.jsp.runtimev2.JspServlet.internalService(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)
+		JspServlet.java:465
+	void oracle.jsp.runtimev2.JspServlet.service(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)
+		JspServlet.java:379
+	void javax.servlet.http.HttpServlet.service(javax.servlet.ServletRequest, javax.servlet.ServletResponse)
+		HttpServlet.java:853
+	void com.evermind[Oracle9iAS (9.0.3.0.0) Containers for J2EE].server.http.ServletRequestDispatcher.invoke(javax.servlet.ServletRequest, javax.servlet.ServletResponse)
+		ServletRequestDispatcher.java:721
+	void com.evermind[Oracle9iAS (9.0.3.0.0) Containers for J2EE].server.http.ServletRequestDispatcher.forwardInternal(javax.servlet.ServletRequest, javax.servlet.http.HttpServletResponse)
+		ServletRequestDispatcher.java:306
+	boolean com.evermind[Oracle9iAS (9.0.3.0.0) Containers for J2EE].server.http.HttpRequestHandler.processRequest(com.evermind[Oracle9iAS (9.0.3.0.0) Containers for J2EE].server.ApplicationServerThread, com.evermind[Oracle9iAS (9.0.3.0.0) Containers for J2EE].server.http.EvermindHttpServletRequest, com.evermind[Oracle9iAS (9.0.3.0.0) Containers for J2EE].server.http.EvermindHttpServletResponse, java.io.InputStream, java.io.OutputStream, boolean)
+		HttpRequestHandler.java:767
+	void com.evermind[Oracle9iAS (9.0.3.0.0) Containers for J2EE].server.http.HttpRequestHandler.run(java.lang.Thread)
+		HttpRequestHandler.java:259
+	void com.evermind[Oracle9iAS (9.0.3.0.0) Containers for J2EE].server.http.HttpRequestHandler.run()
+		HttpRequestHandler.java:106
+	void EDU.oswego.cs.dl.util.concurrent.PooledExecutor$Worker.run()
+		PooledExecutor.java:803
+	void java.lang.Thread.run()
+		Thread.java:484

@@ -3,11 +3,7 @@
 <struts-config>
   <form-beans>
     <form-bean name="LoginForm" type="mypackage1.LoginForm"/>
-<<<<<<< HEAD
-    <form-bean name="InicioForm" type="mypackage1.InicioForm"/>
-=======
     <form-bean name="ActionFormTorneo" type="mypackage1.ActionFormTorneo"/>
->>>>>>> d4ffd1fb6583cb5440697803bb8a93884cc1a333
   </form-beans>
   <global-forwards>
     <forward name="inicio" path="/inicio.jsp"/>
@@ -22,11 +18,7 @@
   </global-forwards>
   <action-mappings>
     <action path="/login" type="mypackage1.LoginAction" parameter="/login.jsp" name="LoginForm" input="/login.jsp" scope="request"/>
-<<<<<<< HEAD
-    <action name="InicioForm" path="/menu" scope="request" type="mypackage1.InicioAction" input="/inicio.jsp"/>
-=======
     <action path="/torneo" type="mypackage1.ActionTorneo" name="ActionFormTorneo" scope="request"/>
->>>>>>> d4ffd1fb6583cb5440697803bb8a93884cc1a333
   </action-mappings>
   <message-resources parameter="mypackage1.ApplicationResources"/>
 </struts-config>
