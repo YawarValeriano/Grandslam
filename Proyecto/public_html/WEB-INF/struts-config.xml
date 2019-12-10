@@ -3,12 +3,14 @@
 <struts-config>
   <form-beans>
     <form-bean name="LoginForm" type="mypackage1.LoginForm"/>
+    <form-bean name="ActionFormTorneo" type="mypackage1.ActionFormTorneo"/>
   </form-beans>
   <global-forwards>
     <forward name="inicio" path="/inicio.jsp"/>
   </global-forwards>
   <action-mappings>
     <action path="/login" type="mypackage1.LoginAction" parameter="/login.jsp" name="LoginForm" input="/login.jsp" scope="request"/>
+    <action path="/torneo" type="mypackage1.ActionTorneo" name="ActionFormTorneo" scope="request"/>
   </action-mappings>
   <message-resources parameter="mypackage1.ApplicationResources"/>
 </struts-config>
