@@ -256,125 +256,160 @@ public class _inicio extends com.orionserver.http.OrionHttpJspPage {
       }
       /*@lineinfo:generated-code*/
       __ojsp_s_out.write(__jsp_StaticText.text[14]);
-      /*@lineinfo:translated-code*//*@lineinfo:90^11*/      {
-        org.apache.struts.taglib.logic.IterateTag __jsp_taghandler_11=(org.apache.struts.taglib.logic.IterateTag)OracleJspRuntime.getTagHandler(pageContext,org.apache.struts.taglib.logic.IterateTag.class,"org.apache.struts.taglib.logic.IterateTag id indexId name property");
+      /*@lineinfo:translated-code*//*@lineinfo:80^7*/      {
+        org.apache.struts.taglib.html.FormTag __jsp_taghandler_11=(org.apache.struts.taglib.html.FormTag)OracleJspRuntime.getTagHandler(pageContext,org.apache.struts.taglib.html.FormTag.class,"org.apache.struts.taglib.html.FormTag action");
         __jsp_taghandler_11.setParent(null);
-        __jsp_taghandler_11.setId("tablaTorneos");
-        __jsp_taghandler_11.setIndexId("index");
-        __jsp_taghandler_11.setName("torneos");
-        __jsp_taghandler_11.setProperty("tablaTorneos");
-        java.lang.Object tablaTorneos = null;
-        java.lang.Integer index = null;
+        __jsp_taghandler_11.setAction("/verPartidos");
         __jsp_tag_starteval=__jsp_taghandler_11.doStartTag();
-        if (OracleJspRuntime.checkStartBodyTagEval(__jsp_tag_starteval))
+        if (OracleJspRuntime.checkStartTagEval(__jsp_tag_starteval))
         {
-          out=OracleJspRuntime.pushBodyIfNeeded(pageContext,__jsp_taghandler_11,__jsp_tag_starteval,out);
-          __ojsp_s_out = (com.evermind.server.http.JspCommonExtraWriter) out;
           do {
-            tablaTorneos = (java.lang.Object) pageContext.findAttribute("tablaTorneos");
-            index = (java.lang.Integer) pageContext.findAttribute("index");
             /*@lineinfo:generated-code*/
             __ojsp_s_out.write(__jsp_StaticText.text[15]);
-            /*@lineinfo:translated-code*//*@lineinfo:92^19*/            {
-              org.apache.struts.taglib.bean.WriteTag __jsp_taghandler_12=(org.apache.struts.taglib.bean.WriteTag)OracleJspRuntime.getTagHandler(pageContext,org.apache.struts.taglib.bean.WriteTag.class,"org.apache.struts.taglib.bean.WriteTag name property");
+            /*@lineinfo:translated-code*//*@lineinfo:91^13*/            {
+              org.apache.struts.taglib.logic.IterateTag __jsp_taghandler_12=(org.apache.struts.taglib.logic.IterateTag)OracleJspRuntime.getTagHandler(pageContext,org.apache.struts.taglib.logic.IterateTag.class,"org.apache.struts.taglib.logic.IterateTag id indexId name property");
               __jsp_taghandler_12.setParent(__jsp_taghandler_11);
-              __jsp_taghandler_12.setName("tablaTorneos");
-              __jsp_taghandler_12.setProperty("torneo");
+              __jsp_taghandler_12.setId("tablaTorneos");
+              __jsp_taghandler_12.setIndexId("index");
+              __jsp_taghandler_12.setName("torneos");
+              __jsp_taghandler_12.setProperty("tablaTorneos");
+              java.lang.Object tablaTorneos = null;
+              java.lang.Integer index = null;
               __jsp_tag_starteval=__jsp_taghandler_12.doStartTag();
-              if (OracleJspRuntime.checkStartTagEval(__jsp_tag_starteval))
+              if (OracleJspRuntime.checkStartBodyTagEval(__jsp_tag_starteval))
               {
+                out=OracleJspRuntime.pushBodyIfNeeded(pageContext,__jsp_taghandler_12,__jsp_tag_starteval,out);
+                __ojsp_s_out = (com.evermind.server.http.JspCommonExtraWriter) out;
                 do {
-                } while (__jsp_taghandler_12.doAfterBody()==javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN);
+                  tablaTorneos = (java.lang.Object) pageContext.findAttribute("tablaTorneos");
+                  index = (java.lang.Integer) pageContext.findAttribute("index");
+                  /*@lineinfo:generated-code*/
+                  __ojsp_s_out.write(__jsp_StaticText.text[16]);
+                  /*@lineinfo:translated-code*//*@lineinfo:93^21*/                  {
+                    org.apache.struts.taglib.bean.WriteTag __jsp_taghandler_13=(org.apache.struts.taglib.bean.WriteTag)OracleJspRuntime.getTagHandler(pageContext,org.apache.struts.taglib.bean.WriteTag.class,"org.apache.struts.taglib.bean.WriteTag name property");
+                    __jsp_taghandler_13.setParent(__jsp_taghandler_12);
+                    __jsp_taghandler_13.setName("tablaTorneos");
+                    __jsp_taghandler_13.setProperty("torneo");
+                    __jsp_tag_starteval=__jsp_taghandler_13.doStartTag();
+                    if (OracleJspRuntime.checkStartTagEval(__jsp_tag_starteval))
+                    {
+                      do {
+                      } while (__jsp_taghandler_13.doAfterBody()==javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN);
+                    }
+                    if (__jsp_taghandler_13.doEndTag()==javax.servlet.jsp.tagext.Tag.SKIP_PAGE)
+                      return;
+                    OracleJspRuntime.releaseTagHandler(pageContext,__jsp_taghandler_13);
+                  }
+                  /*@lineinfo:generated-code*/
+                  __ojsp_s_out.write(__jsp_StaticText.text[17]);
+                  /*@lineinfo:translated-code*//*@lineinfo:94^21*/                  {
+                    org.apache.struts.taglib.bean.WriteTag __jsp_taghandler_14=(org.apache.struts.taglib.bean.WriteTag)OracleJspRuntime.getTagHandler(pageContext,org.apache.struts.taglib.bean.WriteTag.class,"org.apache.struts.taglib.bean.WriteTag name property");
+                    __jsp_taghandler_14.setParent(__jsp_taghandler_12);
+                    __jsp_taghandler_14.setName("tablaTorneos");
+                    __jsp_taghandler_14.setProperty("lugar");
+                    __jsp_tag_starteval=__jsp_taghandler_14.doStartTag();
+                    if (OracleJspRuntime.checkStartTagEval(__jsp_tag_starteval))
+                    {
+                      do {
+                      } while (__jsp_taghandler_14.doAfterBody()==javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN);
+                    }
+                    if (__jsp_taghandler_14.doEndTag()==javax.servlet.jsp.tagext.Tag.SKIP_PAGE)
+                      return;
+                    OracleJspRuntime.releaseTagHandler(pageContext,__jsp_taghandler_14);
+                  }
+                  /*@lineinfo:generated-code*/
+                  __ojsp_s_out.write(__jsp_StaticText.text[18]);
+                  /*@lineinfo:translated-code*//*@lineinfo:95^21*/                  {
+                    org.apache.struts.taglib.bean.WriteTag __jsp_taghandler_15=(org.apache.struts.taglib.bean.WriteTag)OracleJspRuntime.getTagHandler(pageContext,org.apache.struts.taglib.bean.WriteTag.class,"org.apache.struts.taglib.bean.WriteTag name property");
+                    __jsp_taghandler_15.setParent(__jsp_taghandler_12);
+                    __jsp_taghandler_15.setName("tablaTorneos");
+                    __jsp_taghandler_15.setProperty("gestion");
+                    __jsp_tag_starteval=__jsp_taghandler_15.doStartTag();
+                    if (OracleJspRuntime.checkStartTagEval(__jsp_tag_starteval))
+                    {
+                      do {
+                      } while (__jsp_taghandler_15.doAfterBody()==javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN);
+                    }
+                    if (__jsp_taghandler_15.doEndTag()==javax.servlet.jsp.tagext.Tag.SKIP_PAGE)
+                      return;
+                    OracleJspRuntime.releaseTagHandler(pageContext,__jsp_taghandler_15);
+                  }
+                  /*@lineinfo:generated-code*/
+                  __ojsp_s_out.write(__jsp_StaticText.text[19]);
+                  /*@lineinfo:translated-code*//*@lineinfo:97^19*/                  {
+                    org.apache.struts.taglib.html.SubmitTag __jsp_taghandler_16=(org.apache.struts.taglib.html.SubmitTag)OracleJspRuntime.getTagHandler(pageContext,org.apache.struts.taglib.html.SubmitTag.class,"org.apache.struts.taglib.html.SubmitTag property styleClass");
+                    __jsp_taghandler_16.setParent(__jsp_taghandler_12);
+                    __jsp_taghandler_16.setProperty("torneo");
+                    __jsp_taghandler_16.setStyleClass("btn btn-info");
+                    __jsp_tag_starteval=__jsp_taghandler_16.doStartTag();
+                    if (OracleJspRuntime.checkStartBodyTagEval(__jsp_tag_starteval))
+                    {
+                      out=OracleJspRuntime.pushBodyIfNeeded(pageContext,__jsp_taghandler_16,__jsp_tag_starteval,out);
+                      __ojsp_s_out = (com.evermind.server.http.JspCommonExtraWriter) out;
+                      do {
+                        /*@lineinfo:generated-code*/
+                        __ojsp_s_out.write(__jsp_StaticText.text[20]);
+                        /*@lineinfo:translated-code*//*@lineinfo:97^80*/                        {
+                          org.apache.struts.taglib.bean.WriteTag __jsp_taghandler_17=(org.apache.struts.taglib.bean.WriteTag)OracleJspRuntime.getTagHandler(pageContext,org.apache.struts.taglib.bean.WriteTag.class,"org.apache.struts.taglib.bean.WriteTag name property");
+                          __jsp_taghandler_17.setParent(__jsp_taghandler_16);
+                          __jsp_taghandler_17.setName("tablaTorneos");
+                          __jsp_taghandler_17.setProperty("torneo");
+                          __jsp_tag_starteval=__jsp_taghandler_17.doStartTag();
+                          if (OracleJspRuntime.checkStartTagEval(__jsp_tag_starteval))
+                          {
+                            do {
+                            } while (__jsp_taghandler_17.doAfterBody()==javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN);
+                          }
+                          if (__jsp_taghandler_17.doEndTag()==javax.servlet.jsp.tagext.Tag.SKIP_PAGE)
+                            return;
+                          OracleJspRuntime.releaseTagHandler(pageContext,__jsp_taghandler_17);
+                        }
+                        /*@lineinfo:generated-code*/
+                        __ojsp_s_out.write(__jsp_StaticText.text[21]);
+                      /*@lineinfo:translated-code*//*@lineinfo:97^132*/                      } while (__jsp_taghandler_16.doAfterBody()==javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN);
+                      out=OracleJspRuntime.popBodyIfNeeded(pageContext,out);
+                      __ojsp_s_out = (com.evermind.server.http.JspCommonExtraWriter) out;
+                    }
+                    if (__jsp_taghandler_16.doEndTag()==javax.servlet.jsp.tagext.Tag.SKIP_PAGE)
+                      return;
+                    OracleJspRuntime.releaseTagHandler(pageContext,__jsp_taghandler_16);
+                  }
+                  /*@lineinfo:generated-code*/
+                  __ojsp_s_out.write(__jsp_StaticText.text[22]);
+                /*@lineinfo:translated-code*//*@lineinfo:98^15*/                } while (__jsp_taghandler_12.doAfterBody()==javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN);
+                out=OracleJspRuntime.popBodyIfNeeded(pageContext,out);
+                __ojsp_s_out = (com.evermind.server.http.JspCommonExtraWriter) out;
               }
               if (__jsp_taghandler_12.doEndTag()==javax.servlet.jsp.tagext.Tag.SKIP_PAGE)
                 return;
               OracleJspRuntime.releaseTagHandler(pageContext,__jsp_taghandler_12);
             }
             /*@lineinfo:generated-code*/
-            __ojsp_s_out.write(__jsp_StaticText.text[16]);
-            /*@lineinfo:translated-code*//*@lineinfo:93^19*/            {
-              org.apache.struts.taglib.bean.WriteTag __jsp_taghandler_13=(org.apache.struts.taglib.bean.WriteTag)OracleJspRuntime.getTagHandler(pageContext,org.apache.struts.taglib.bean.WriteTag.class,"org.apache.struts.taglib.bean.WriteTag name property");
-              __jsp_taghandler_13.setParent(__jsp_taghandler_11);
-              __jsp_taghandler_13.setName("tablaTorneos");
-              __jsp_taghandler_13.setProperty("lugar");
-              __jsp_tag_starteval=__jsp_taghandler_13.doStartTag();
-              if (OracleJspRuntime.checkStartTagEval(__jsp_tag_starteval))
-              {
-                do {
-                } while (__jsp_taghandler_13.doAfterBody()==javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN);
-              }
-              if (__jsp_taghandler_13.doEndTag()==javax.servlet.jsp.tagext.Tag.SKIP_PAGE)
-                return;
-              OracleJspRuntime.releaseTagHandler(pageContext,__jsp_taghandler_13);
-            }
-            /*@lineinfo:generated-code*/
-            __ojsp_s_out.write(__jsp_StaticText.text[17]);
-            /*@lineinfo:translated-code*//*@lineinfo:94^19*/            {
-              org.apache.struts.taglib.bean.WriteTag __jsp_taghandler_14=(org.apache.struts.taglib.bean.WriteTag)OracleJspRuntime.getTagHandler(pageContext,org.apache.struts.taglib.bean.WriteTag.class,"org.apache.struts.taglib.bean.WriteTag name property");
-              __jsp_taghandler_14.setParent(__jsp_taghandler_11);
-              __jsp_taghandler_14.setName("tablaTorneos");
-              __jsp_taghandler_14.setProperty("gestion");
-              __jsp_tag_starteval=__jsp_taghandler_14.doStartTag();
-              if (OracleJspRuntime.checkStartTagEval(__jsp_tag_starteval))
-              {
-                do {
-                } while (__jsp_taghandler_14.doAfterBody()==javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN);
-              }
-              if (__jsp_taghandler_14.doEndTag()==javax.servlet.jsp.tagext.Tag.SKIP_PAGE)
-                return;
-              OracleJspRuntime.releaseTagHandler(pageContext,__jsp_taghandler_14);
-            }
-            /*@lineinfo:generated-code*/
-            __ojsp_s_out.write(__jsp_StaticText.text[18]);
-            /*@lineinfo:translated-code*//*@lineinfo:96^17*/            {
-              org.apache.struts.taglib.html.SubmitTag __jsp_taghandler_15=(org.apache.struts.taglib.html.SubmitTag)OracleJspRuntime.getTagHandler(pageContext,org.apache.struts.taglib.html.SubmitTag.class,"org.apache.struts.taglib.html.SubmitTag property styleClass");
-              __jsp_taghandler_15.setParent(__jsp_taghandler_11);
-              __jsp_taghandler_15.setProperty("torneo");
-              __jsp_taghandler_15.setStyleClass("btn btn-info");
-              __jsp_tag_starteval=__jsp_taghandler_15.doStartTag();
-              if (OracleJspRuntime.checkStartBodyTagEval(__jsp_tag_starteval))
-              {
-                out=OracleJspRuntime.pushBodyIfNeeded(pageContext,__jsp_taghandler_15,__jsp_tag_starteval,out);
-                __ojsp_s_out = (com.evermind.server.http.JspCommonExtraWriter) out;
-                do {
-                  /*@lineinfo:generated-code*/
-                  __ojsp_s_out.write(__jsp_StaticText.text[19]);
-                /*@lineinfo:translated-code*//*@lineinfo:96^74*/                } while (__jsp_taghandler_15.doAfterBody()==javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN);
-                out=OracleJspRuntime.popBodyIfNeeded(pageContext,out);
-                __ojsp_s_out = (com.evermind.server.http.JspCommonExtraWriter) out;
-              }
-              if (__jsp_taghandler_15.doEndTag()==javax.servlet.jsp.tagext.Tag.SKIP_PAGE)
-                return;
-              OracleJspRuntime.releaseTagHandler(pageContext,__jsp_taghandler_15);
-            }
-            /*@lineinfo:generated-code*/
-            __ojsp_s_out.write(__jsp_StaticText.text[20]);
-          /*@lineinfo:translated-code*//*@lineinfo:96^100*/          } while (__jsp_taghandler_11.doAfterBody()==javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN);
-          out=OracleJspRuntime.popBodyIfNeeded(pageContext,out);
-          __ojsp_s_out = (com.evermind.server.http.JspCommonExtraWriter) out;
+            __ojsp_s_out.write(__jsp_StaticText.text[23]);
+          /*@lineinfo:translated-code*//*@lineinfo:101^29*/          } while (__jsp_taghandler_11.doAfterBody()==javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN);
         }
         if (__jsp_taghandler_11.doEndTag()==javax.servlet.jsp.tagext.Tag.SKIP_PAGE)
           return;
         OracleJspRuntime.releaseTagHandler(pageContext,__jsp_taghandler_11);
       }
       /*@lineinfo:generated-code*/
-      __ojsp_s_out.write(__jsp_StaticText.text[21]);
-      /*@lineinfo:translated-code*//*@lineinfo:105^1*/      {
-        org.apache.struts.taglib.bean.MessageTag __jsp_taghandler_16=(org.apache.struts.taglib.bean.MessageTag)OracleJspRuntime.getTagHandler(pageContext,org.apache.struts.taglib.bean.MessageTag.class,"org.apache.struts.taglib.bean.MessageTag key");
-        __jsp_taghandler_16.setParent(null);
-        __jsp_taghandler_16.setKey("boot.script");
-        __jsp_tag_starteval=__jsp_taghandler_16.doStartTag();
+      __ojsp_s_out.write(__jsp_StaticText.text[24]);
+      /*@lineinfo:translated-code*//*@lineinfo:108^1*/      {
+        org.apache.struts.taglib.bean.MessageTag __jsp_taghandler_18=(org.apache.struts.taglib.bean.MessageTag)OracleJspRuntime.getTagHandler(pageContext,org.apache.struts.taglib.bean.MessageTag.class,"org.apache.struts.taglib.bean.MessageTag key");
+        __jsp_taghandler_18.setParent(null);
+        __jsp_taghandler_18.setKey("boot.script");
+        __jsp_tag_starteval=__jsp_taghandler_18.doStartTag();
         if (OracleJspRuntime.checkStartTagEval(__jsp_tag_starteval))
         {
           do {
-          } while (__jsp_taghandler_16.doAfterBody()==javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN);
+          } while (__jsp_taghandler_18.doAfterBody()==javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN);
         }
-        if (__jsp_taghandler_16.doEndTag()==javax.servlet.jsp.tagext.Tag.SKIP_PAGE)
+        if (__jsp_taghandler_18.doEndTag()==javax.servlet.jsp.tagext.Tag.SKIP_PAGE)
           return;
-        OracleJspRuntime.releaseTagHandler(pageContext,__jsp_taghandler_16);
+        OracleJspRuntime.releaseTagHandler(pageContext,__jsp_taghandler_18);
       }
       /*@lineinfo:generated-code*/
-      __ojsp_s_out.write(__jsp_StaticText.text[22]);
+      __ojsp_s_out.write(__jsp_StaticText.text[25]);
 
 
     }
@@ -393,7 +428,7 @@ public class _inicio extends com.orionserver.http.OrionHttpJspPage {
 
   }
   private static class __jsp_StaticText {
-    private static final byte text[][]=new byte[23][];
+    private static final byte text[][]=new byte[26][];
     static {
       try {
       text[0] = 
@@ -425,22 +460,28 @@ public class _inicio extends com.orionserver.http.OrionHttpJspPage {
       text[13] = 
       "\r\n            </div>\r\n          </li>\r\n        </ul>\r\n      </div>\r\n    </div>\r\n  </nav>\r\n\r\n".getBytes("Cp1252");
       text[14] = 
-      "\r\n<body>\r\n<br>\r\n<div class=\"container\">\r\n  <div class=\"row\">\r\n    <div class=\"col-3\"></div>\r\n    <div class=\"col-6\">\r\n      <table class=\"table table-striped\">\r\n        <thead class=\"thead-dark\">\r\n          <tr>\r\n            <th scope=\"col\">ID</th>\r\n            <th scope=\"col\">Lugar</th>\r\n            <th scope=\"col\">Gestión</th>\r\n            <th scope=\"col\">Opciones</th>\r\n          </tr>\r\n        </thead>\r\n        <tbody>\r\n          ".getBytes("Cp1252");
+      "\r\n<body>\r\n<br>\r\n<div class=\"container\">\r\n  <div class=\"row\">\r\n    <div class=\"col-3\"></div>\r\n    <div class=\"col-6\">\r\n      ".getBytes("Cp1252");
       text[15] = 
-      "\r\n            <tr>\r\n              <td>".getBytes("Cp1252");
+      "\r\n        <table class=\"table table-striped\">\r\n          <thead class=\"thead-dark\">\r\n            <tr>\r\n              <th scope=\"col\">ID</th>\r\n              <th scope=\"col\">Lugar</th>\r\n              <th scope=\"col\">Gestión</th>\r\n              <th scope=\"col\">Opciones</th>\r\n            </tr>\r\n          </thead>\r\n          <tbody>\r\n            ".getBytes("Cp1252");
       text[16] = 
-      "</td>\r\n              <td>".getBytes("Cp1252");
+      "\r\n              <tr>\r\n                <td>".getBytes("Cp1252");
       text[17] = 
-      "</td>\r\n              <td>".getBytes("Cp1252");
+      "</td>\r\n                <td>".getBytes("Cp1252");
       text[18] = 
-      "</td>\r\n              <td>\r\n                ".getBytes("Cp1252");
+      "</td>\r\n                <td>".getBytes("Cp1252");
       text[19] = 
-      "Ver Partidos".getBytes("Cp1252");
+      "</td>\r\n                <td>\r\n                  ".getBytes("Cp1252");
       text[20] = 
-      "\r\n              </td>\r\n            </tr>\r\n          ".getBytes("Cp1252");
+      "Ver ".getBytes("Cp1252");
       text[21] = 
-      "\r\n        </tbody>\r\n      </table>\r\n    </div>\r\n  </div>\r\n</div>\r\n".getBytes("Cp1252");
+      "\r\n".getBytes("Cp1252");
       text[22] = 
+      "\r\n                </td>\r\n              </tr>\r\n            ".getBytes("Cp1252");
+      text[23] = 
+      "\r\n          </tbody>\r\n        </table>\r\n      ".getBytes("Cp1252");
+      text[24] = 
+      "\r\n    </div>\r\n  </div>\r\n</div>\r\n".getBytes("Cp1252");
+      text[25] = 
       "\r\n</body>\r\n</html>\r\n".getBytes("Cp1252");
       }
       catch (Throwable th) {

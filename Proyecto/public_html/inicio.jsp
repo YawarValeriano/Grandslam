@@ -77,28 +77,31 @@ Inicio
   <div class="row">
     <div class="col-3"></div>
     <div class="col-6">
-      <table class="table table-striped">
-        <thead class="thead-dark">
-          <tr>
-            <th scope="col">ID</th>
-            <th scope="col">Lugar</th>
-            <th scope="col">Gestión</th>
-            <th scope="col">Opciones</th>
-          </tr>
-        </thead>
-        <tbody>
-          <logic:iterate id="tablaTorneos" indexId="index" name="torneos" property="tablaTorneos">
+      <html:form action="/verPartidos">
+        <table class="table table-striped">
+          <thead class="thead-dark">
             <tr>
-              <td><bean:write name="tablaTorneos" property="torneo" /></td>
-              <td><bean:write name="tablaTorneos" property="lugar" /></td>
-              <td><bean:write name="tablaTorneos" property="gestion" /></td>
-              <td>
-                <html:submit property="torneo" styleClass="btn btn-info">Ver Partidos</html:submit>
-              </td>
+              <th scope="col">ID</th>
+              <th scope="col">Lugar</th>
+              <th scope="col">Gestión</th>
+              <th scope="col">Opciones</th>
             </tr>
-          </logic:iterate>
-        </tbody>
-      </table>
+          </thead>
+          <tbody>
+            <logic:iterate id="tablaTorneos" indexId="index" name="torneos" property="tablaTorneos">
+              <tr>
+                <td><bean:write name="tablaTorneos" property="torneo" /></td>
+                <td><bean:write name="tablaTorneos" property="lugar" /></td>
+                <td><bean:write name="tablaTorneos" property="gestion" /></td>
+                <td>
+                  <html:submit property="torneo" styleClass="btn btn-info">Ver <bean:write name="tablaTorneos" property="torneo" />
+</html:submit>
+                </td>
+              </tr>
+            </logic:iterate>
+          </tbody>
+        </table>
+      </html:form>
     </div>
   </div>
 </div>

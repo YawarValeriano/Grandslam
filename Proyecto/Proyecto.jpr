@@ -64,6 +64,7 @@
       </Item>
       <Item class="oracle.jdeveloper.model.JspSourceNode">
          <URL path="src/mypackage1/ConnectDB.java"/>
+         <encoding>windows-1252</encoding>
       </Item>
       <Item class="oracle.jdeveloper.model.JavaSourceNode">
          <URL path="src/mypackage1/ActionTorneo.java"/>
@@ -73,6 +74,12 @@
       </Item>
       <Item class="oracle.jdeveloper.model.JavaSourceNode">
          <URL path="src/mypackage1/ClaseTorneo.java"/>
+      </Item>
+      <Item class="oracle.jdeveloper.model.JavaSourceNode">
+         <URL path="src/mypackage1/PartidosAction.java"/>
+      </Item>
+      <Item class="oracle.jdeveloper.model.JavaSourceNode">
+         <URL path="src/mypackage1/PartidosForm.java"/>
       </Item>
    </listOfChildren>
    <ownerMap/>
