@@ -9,6 +9,12 @@ import java.io.IOException;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.sql.*;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import javax.naming.NamingException;
+import oracle.jdbc.*;
+import java.util.*;
 
 public class InicioAction extends Action 
 {
@@ -21,11 +27,61 @@ public class InicioAction extends Action
    */
   public ActionForward execute(ActionMapping mapping, ActionForm form, HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException
   {
+    Connection cn = null;
+    ConnectDB conn =new ConnectDB();
+    ResultSet rsConsulta = null;
     InicioForm navBar = (InicioForm) form;
     String opcion = navBar.getOpcionNavBar();
     if (opcion.equals("Ver Torneos"))
     {
-      return mapping.findForward("inicio");
+      try
+      {
+        //select * from tab where TNAME like '%G8%'
+    
+        cn = conn.conexion;
+        String cadena = "select a.id_torneo as torneo,b.anio as gestion,c.granbetrana,c.francia,c.usa,c.australia  from g8_torneo a,g8_gestion b,g8_lugar order by 1";
+        rsConsulta = conn.getData(cadena);
+        ArrayList items = new ArrayList();
+        while (rsConsulta.next())
+        {
+          String aux="";
+          ClaseTorneo item = new ClaseTorneo();
+          item.setTorneo(rsConsulta.getString("torneo"));
+          item.setGestion(rsConsulta.getString("gestion"));
+          int i = Integer.parseInt(rsConsulta.getString("granbetrana"));
+          if(i>0){
+            aux="Gran Betrana";
+          }
+          int j = Integer.parseInt(rsConsulta.getString("francia"));
+          if(j>0){
+            aux="Francia";
+          }
+          int k = Integer.parseInt(rsConsulta.getString("australia"));
+          if(k>0){
+            aux="Australia";
+          }
+          int l = Integer.parseInt(rsConsulta.getString("usa"));
+          if(l>0){
+            aux="USA";
+          }
+          item.setLugar(aux);
+          items.add(item);
+        }  
+        ActionFormTorneo f = new ActionFormTorneo();
+        f.setTabla(items);
+        System.out.println(f);
+        request.getSession().setAttribute("yyy",f);
+        return mapping.findForward("inicio");
+      }	
+      catch(Exception e)
+      {
+        e.printStackTrace();
+        return (mapping.findForward("error"));
+      }
+      finally
+      {
+        conn.closeConnection();	
+      }
     }
     if (opcion.equals("Nuevo Torneo"))
     {

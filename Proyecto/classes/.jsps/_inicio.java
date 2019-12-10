@@ -7,7 +7,7 @@ import javax.servlet.http.*;
 import javax.servlet.jsp.*;
 
 
-public class _inicio extends oracle.jsp.runtime.HttpJsp {
+public class _inicio extends com.orionserver.http.OrionHttpJspPage {
 
   public final String _globalsClassName = null;
 
@@ -30,25 +30,21 @@ public class _inicio extends oracle.jsp.runtime.HttpJsp {
     PageContext pageContext = JspFactory.getDefaultFactory().getPageContext( this, request, response, null, true, JspWriter.DEFAULT_BUFFER, true);
     // Note: this is not emitted if the session directive == false
     HttpSession session = pageContext.getSession();
-    if (pageContext.getAttribute(OracleJspRuntime.JSP_REQUEST_REDIRECTED, PageContext.REQUEST_SCOPE) != null) {
-      pageContext.setAttribute(OracleJspRuntime.JSP_PAGE_DONTNOTIFY, "true", PageContext.PAGE_SCOPE);
-      JspFactory.getDefaultFactory().releasePageContext(pageContext);
-      return;
-}
     int __jsp_tag_starteval;
     ServletContext application = pageContext.getServletContext();
     JspWriter out = pageContext.getOut();
     _inicio page = this;
     ServletConfig config = pageContext.getServletConfig();
 
+    com.evermind.server.http.JspCommonExtraWriter __ojsp_s_out = (com.evermind.server.http.JspCommonExtraWriter) out;
     try {
       // global beans
       // end global beans
 
 
-      out.write(__jsp_StaticText.text[0]);
-      out.write(__jsp_StaticText.text[1]);
-      out.write(__jsp_StaticText.text[2]);
+      __ojsp_s_out.write(__jsp_StaticText.text[0]);
+      __ojsp_s_out.write(__jsp_StaticText.text[1]);
+      __ojsp_s_out.write(__jsp_StaticText.text[2]);
       /*@lineinfo:translated-code*//*@lineinfo:7^1*/      {
         org.apache.struts.taglib.bean.MessageTag __jsp_taghandler_1=(org.apache.struts.taglib.bean.MessageTag)OracleJspRuntime.getTagHandler(pageContext,org.apache.struts.taglib.bean.MessageTag.class,"org.apache.struts.taglib.bean.MessageTag key");
         __jsp_taghandler_1.setParent(null);
@@ -64,7 +60,7 @@ public class _inicio extends oracle.jsp.runtime.HttpJsp {
         OracleJspRuntime.releaseTagHandler(pageContext,__jsp_taghandler_1);
       }
       /*@lineinfo:generated-code*/
-      out.write(__jsp_StaticText.text[3]);
+      __ojsp_s_out.write(__jsp_StaticText.text[3]);
       /*@lineinfo:translated-code*//*@lineinfo:13^1*/      {
         org.apache.struts.taglib.html.FormTag __jsp_taghandler_2=(org.apache.struts.taglib.html.FormTag)OracleJspRuntime.getTagHandler(pageContext,org.apache.struts.taglib.html.FormTag.class,"org.apache.struts.taglib.html.FormTag action");
         __jsp_taghandler_2.setParent(null);
@@ -74,8 +70,8 @@ public class _inicio extends oracle.jsp.runtime.HttpJsp {
         {
           do {
             /*@lineinfo:generated-code*/
-            out.write(__jsp_StaticText.text[4]);
-            /*@lineinfo:translated-code*//*@lineinfo:25^13*/            {
+            __ojsp_s_out.write(__jsp_StaticText.text[4]);
+            /*@lineinfo:translated-code*//*@lineinfo:26^13*/            {
               org.apache.struts.taglib.html.SubmitTag __jsp_taghandler_3=(org.apache.struts.taglib.html.SubmitTag)OracleJspRuntime.getTagHandler(pageContext,org.apache.struts.taglib.html.SubmitTag.class,"org.apache.struts.taglib.html.SubmitTag property styleClass value");
               __jsp_taghandler_3.setParent(__jsp_taghandler_2);
               __jsp_taghandler_3.setProperty("opcionNavBar");
@@ -85,17 +81,19 @@ public class _inicio extends oracle.jsp.runtime.HttpJsp {
               if (OracleJspRuntime.checkStartBodyTagEval(__jsp_tag_starteval))
               {
                 out=OracleJspRuntime.pushBodyIfNeeded(pageContext,__jsp_taghandler_3,__jsp_tag_starteval,out);
+                __ojsp_s_out = (com.evermind.server.http.JspCommonExtraWriter) out;
                 do {
                 } while (__jsp_taghandler_3.doAfterBody()==javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN);
                 out=OracleJspRuntime.popBodyIfNeeded(pageContext,out);
+                __ojsp_s_out = (com.evermind.server.http.JspCommonExtraWriter) out;
               }
               if (__jsp_taghandler_3.doEndTag()==javax.servlet.jsp.tagext.Tag.SKIP_PAGE)
                 return;
               OracleJspRuntime.releaseTagHandler(pageContext,__jsp_taghandler_3);
             }
             /*@lineinfo:generated-code*/
-            out.write(__jsp_StaticText.text[5]);
-            /*@lineinfo:translated-code*//*@lineinfo:26^13*/            {
+            __ojsp_s_out.write(__jsp_StaticText.text[5]);
+            /*@lineinfo:translated-code*//*@lineinfo:27^13*/            {
               org.apache.struts.taglib.html.SubmitTag __jsp_taghandler_4=(org.apache.struts.taglib.html.SubmitTag)OracleJspRuntime.getTagHandler(pageContext,org.apache.struts.taglib.html.SubmitTag.class,"org.apache.struts.taglib.html.SubmitTag property styleClass value");
               __jsp_taghandler_4.setParent(__jsp_taghandler_2);
               __jsp_taghandler_4.setProperty("opcionNavBar");
@@ -105,17 +103,19 @@ public class _inicio extends oracle.jsp.runtime.HttpJsp {
               if (OracleJspRuntime.checkStartBodyTagEval(__jsp_tag_starteval))
               {
                 out=OracleJspRuntime.pushBodyIfNeeded(pageContext,__jsp_taghandler_4,__jsp_tag_starteval,out);
+                __ojsp_s_out = (com.evermind.server.http.JspCommonExtraWriter) out;
                 do {
                 } while (__jsp_taghandler_4.doAfterBody()==javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN);
                 out=OracleJspRuntime.popBodyIfNeeded(pageContext,out);
+                __ojsp_s_out = (com.evermind.server.http.JspCommonExtraWriter) out;
               }
               if (__jsp_taghandler_4.doEndTag()==javax.servlet.jsp.tagext.Tag.SKIP_PAGE)
                 return;
               OracleJspRuntime.releaseTagHandler(pageContext,__jsp_taghandler_4);
             }
             /*@lineinfo:generated-code*/
-            out.write(__jsp_StaticText.text[6]);
-            /*@lineinfo:translated-code*//*@lineinfo:34^13*/            {
+            __ojsp_s_out.write(__jsp_StaticText.text[6]);
+            /*@lineinfo:translated-code*//*@lineinfo:35^13*/            {
               org.apache.struts.taglib.html.SubmitTag __jsp_taghandler_5=(org.apache.struts.taglib.html.SubmitTag)OracleJspRuntime.getTagHandler(pageContext,org.apache.struts.taglib.html.SubmitTag.class,"org.apache.struts.taglib.html.SubmitTag property styleClass value");
               __jsp_taghandler_5.setParent(__jsp_taghandler_2);
               __jsp_taghandler_5.setProperty("opcionNavBar");
@@ -125,17 +125,19 @@ public class _inicio extends oracle.jsp.runtime.HttpJsp {
               if (OracleJspRuntime.checkStartBodyTagEval(__jsp_tag_starteval))
               {
                 out=OracleJspRuntime.pushBodyIfNeeded(pageContext,__jsp_taghandler_5,__jsp_tag_starteval,out);
+                __ojsp_s_out = (com.evermind.server.http.JspCommonExtraWriter) out;
                 do {
                 } while (__jsp_taghandler_5.doAfterBody()==javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN);
                 out=OracleJspRuntime.popBodyIfNeeded(pageContext,out);
+                __ojsp_s_out = (com.evermind.server.http.JspCommonExtraWriter) out;
               }
               if (__jsp_taghandler_5.doEndTag()==javax.servlet.jsp.tagext.Tag.SKIP_PAGE)
                 return;
               OracleJspRuntime.releaseTagHandler(pageContext,__jsp_taghandler_5);
             }
             /*@lineinfo:generated-code*/
-            out.write(__jsp_StaticText.text[7]);
-            /*@lineinfo:translated-code*//*@lineinfo:35^13*/            {
+            __ojsp_s_out.write(__jsp_StaticText.text[7]);
+            /*@lineinfo:translated-code*//*@lineinfo:36^13*/            {
               org.apache.struts.taglib.html.SubmitTag __jsp_taghandler_6=(org.apache.struts.taglib.html.SubmitTag)OracleJspRuntime.getTagHandler(pageContext,org.apache.struts.taglib.html.SubmitTag.class,"org.apache.struts.taglib.html.SubmitTag property styleClass value");
               __jsp_taghandler_6.setParent(__jsp_taghandler_2);
               __jsp_taghandler_6.setProperty("opcionNavBar");
@@ -145,17 +147,19 @@ public class _inicio extends oracle.jsp.runtime.HttpJsp {
               if (OracleJspRuntime.checkStartBodyTagEval(__jsp_tag_starteval))
               {
                 out=OracleJspRuntime.pushBodyIfNeeded(pageContext,__jsp_taghandler_6,__jsp_tag_starteval,out);
+                __ojsp_s_out = (com.evermind.server.http.JspCommonExtraWriter) out;
                 do {
                 } while (__jsp_taghandler_6.doAfterBody()==javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN);
                 out=OracleJspRuntime.popBodyIfNeeded(pageContext,out);
+                __ojsp_s_out = (com.evermind.server.http.JspCommonExtraWriter) out;
               }
               if (__jsp_taghandler_6.doEndTag()==javax.servlet.jsp.tagext.Tag.SKIP_PAGE)
                 return;
               OracleJspRuntime.releaseTagHandler(pageContext,__jsp_taghandler_6);
             }
             /*@lineinfo:generated-code*/
-            out.write(__jsp_StaticText.text[8]);
-            /*@lineinfo:translated-code*//*@lineinfo:43^13*/            {
+            __ojsp_s_out.write(__jsp_StaticText.text[8]);
+            /*@lineinfo:translated-code*//*@lineinfo:44^13*/            {
               org.apache.struts.taglib.html.SubmitTag __jsp_taghandler_7=(org.apache.struts.taglib.html.SubmitTag)OracleJspRuntime.getTagHandler(pageContext,org.apache.struts.taglib.html.SubmitTag.class,"org.apache.struts.taglib.html.SubmitTag property styleClass value");
               __jsp_taghandler_7.setParent(__jsp_taghandler_2);
               __jsp_taghandler_7.setProperty("opcionNavBar");
@@ -165,17 +169,19 @@ public class _inicio extends oracle.jsp.runtime.HttpJsp {
               if (OracleJspRuntime.checkStartBodyTagEval(__jsp_tag_starteval))
               {
                 out=OracleJspRuntime.pushBodyIfNeeded(pageContext,__jsp_taghandler_7,__jsp_tag_starteval,out);
+                __ojsp_s_out = (com.evermind.server.http.JspCommonExtraWriter) out;
                 do {
                 } while (__jsp_taghandler_7.doAfterBody()==javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN);
                 out=OracleJspRuntime.popBodyIfNeeded(pageContext,out);
+                __ojsp_s_out = (com.evermind.server.http.JspCommonExtraWriter) out;
               }
               if (__jsp_taghandler_7.doEndTag()==javax.servlet.jsp.tagext.Tag.SKIP_PAGE)
                 return;
               OracleJspRuntime.releaseTagHandler(pageContext,__jsp_taghandler_7);
             }
             /*@lineinfo:generated-code*/
-            out.write(__jsp_StaticText.text[9]);
-            /*@lineinfo:translated-code*//*@lineinfo:44^13*/            {
+            __ojsp_s_out.write(__jsp_StaticText.text[9]);
+            /*@lineinfo:translated-code*//*@lineinfo:45^13*/            {
               org.apache.struts.taglib.html.SubmitTag __jsp_taghandler_8=(org.apache.struts.taglib.html.SubmitTag)OracleJspRuntime.getTagHandler(pageContext,org.apache.struts.taglib.html.SubmitTag.class,"org.apache.struts.taglib.html.SubmitTag property styleClass value");
               __jsp_taghandler_8.setParent(__jsp_taghandler_2);
               __jsp_taghandler_8.setProperty("opcionNavBar");
@@ -185,17 +191,19 @@ public class _inicio extends oracle.jsp.runtime.HttpJsp {
               if (OracleJspRuntime.checkStartBodyTagEval(__jsp_tag_starteval))
               {
                 out=OracleJspRuntime.pushBodyIfNeeded(pageContext,__jsp_taghandler_8,__jsp_tag_starteval,out);
+                __ojsp_s_out = (com.evermind.server.http.JspCommonExtraWriter) out;
                 do {
                 } while (__jsp_taghandler_8.doAfterBody()==javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN);
                 out=OracleJspRuntime.popBodyIfNeeded(pageContext,out);
+                __ojsp_s_out = (com.evermind.server.http.JspCommonExtraWriter) out;
               }
               if (__jsp_taghandler_8.doEndTag()==javax.servlet.jsp.tagext.Tag.SKIP_PAGE)
                 return;
               OracleJspRuntime.releaseTagHandler(pageContext,__jsp_taghandler_8);
             }
             /*@lineinfo:generated-code*/
-            out.write(__jsp_StaticText.text[10]);
-            /*@lineinfo:translated-code*//*@lineinfo:52^13*/            {
+            __ojsp_s_out.write(__jsp_StaticText.text[10]);
+            /*@lineinfo:translated-code*//*@lineinfo:53^13*/            {
               org.apache.struts.taglib.html.SubmitTag __jsp_taghandler_9=(org.apache.struts.taglib.html.SubmitTag)OracleJspRuntime.getTagHandler(pageContext,org.apache.struts.taglib.html.SubmitTag.class,"org.apache.struts.taglib.html.SubmitTag property styleClass value");
               __jsp_taghandler_9.setParent(__jsp_taghandler_2);
               __jsp_taghandler_9.setProperty("opcionNavBar");
@@ -205,17 +213,19 @@ public class _inicio extends oracle.jsp.runtime.HttpJsp {
               if (OracleJspRuntime.checkStartBodyTagEval(__jsp_tag_starteval))
               {
                 out=OracleJspRuntime.pushBodyIfNeeded(pageContext,__jsp_taghandler_9,__jsp_tag_starteval,out);
+                __ojsp_s_out = (com.evermind.server.http.JspCommonExtraWriter) out;
                 do {
                 } while (__jsp_taghandler_9.doAfterBody()==javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN);
                 out=OracleJspRuntime.popBodyIfNeeded(pageContext,out);
+                __ojsp_s_out = (com.evermind.server.http.JspCommonExtraWriter) out;
               }
               if (__jsp_taghandler_9.doEndTag()==javax.servlet.jsp.tagext.Tag.SKIP_PAGE)
                 return;
               OracleJspRuntime.releaseTagHandler(pageContext,__jsp_taghandler_9);
             }
             /*@lineinfo:generated-code*/
-            out.write(__jsp_StaticText.text[11]);
-            /*@lineinfo:translated-code*//*@lineinfo:62^15*/            {
+            __ojsp_s_out.write(__jsp_StaticText.text[11]);
+            /*@lineinfo:translated-code*//*@lineinfo:64^15*/            {
               org.apache.struts.taglib.html.SubmitTag __jsp_taghandler_10=(org.apache.struts.taglib.html.SubmitTag)OracleJspRuntime.getTagHandler(pageContext,org.apache.struts.taglib.html.SubmitTag.class,"org.apache.struts.taglib.html.SubmitTag property styleClass value");
               __jsp_taghandler_10.setParent(__jsp_taghandler_2);
               __jsp_taghandler_10.setProperty("opcionNavBar");
@@ -225,25 +235,27 @@ public class _inicio extends oracle.jsp.runtime.HttpJsp {
               if (OracleJspRuntime.checkStartBodyTagEval(__jsp_tag_starteval))
               {
                 out=OracleJspRuntime.pushBodyIfNeeded(pageContext,__jsp_taghandler_10,__jsp_tag_starteval,out);
+                __ojsp_s_out = (com.evermind.server.http.JspCommonExtraWriter) out;
                 do {
                 } while (__jsp_taghandler_10.doAfterBody()==javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN);
                 out=OracleJspRuntime.popBodyIfNeeded(pageContext,out);
+                __ojsp_s_out = (com.evermind.server.http.JspCommonExtraWriter) out;
               }
               if (__jsp_taghandler_10.doEndTag()==javax.servlet.jsp.tagext.Tag.SKIP_PAGE)
                 return;
               OracleJspRuntime.releaseTagHandler(pageContext,__jsp_taghandler_10);
             }
             /*@lineinfo:generated-code*/
-            out.write(__jsp_StaticText.text[12]);
-          /*@lineinfo:translated-code*//*@lineinfo:62^95*/          } while (__jsp_taghandler_2.doAfterBody()==javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN);
+            __ojsp_s_out.write(__jsp_StaticText.text[12]);
+          /*@lineinfo:translated-code*//*@lineinfo:64^95*/          } while (__jsp_taghandler_2.doAfterBody()==javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN);
         }
         if (__jsp_taghandler_2.doEndTag()==javax.servlet.jsp.tagext.Tag.SKIP_PAGE)
           return;
         OracleJspRuntime.releaseTagHandler(pageContext,__jsp_taghandler_2);
       }
       /*@lineinfo:generated-code*/
-      out.write(__jsp_StaticText.text[13]);
-      /*@lineinfo:translated-code*//*@lineinfo:73^1*/      {
+      __ojsp_s_out.write(__jsp_StaticText.text[13]);
+      /*@lineinfo:translated-code*//*@lineinfo:75^1*/      {
         org.apache.struts.taglib.bean.MessageTag __jsp_taghandler_11=(org.apache.struts.taglib.bean.MessageTag)OracleJspRuntime.getTagHandler(pageContext,org.apache.struts.taglib.bean.MessageTag.class,"org.apache.struts.taglib.bean.MessageTag key");
         __jsp_taghandler_11.setParent(null);
         __jsp_taghandler_11.setKey("boot.script");
@@ -258,7 +270,7 @@ public class _inicio extends oracle.jsp.runtime.HttpJsp {
         OracleJspRuntime.releaseTagHandler(pageContext,__jsp_taghandler_11);
       }
       /*@lineinfo:generated-code*/
-      out.write(__jsp_StaticText.text[14]);
+      __ojsp_s_out.write(__jsp_StaticText.text[14]);
 
 
     }
@@ -277,39 +289,39 @@ public class _inicio extends oracle.jsp.runtime.HttpJsp {
 
   }
   private static class __jsp_StaticText {
-    private static final char text[][]=new char[15][];
+    private static final byte text[][]=new byte[15][];
     static {
       try {
       text[0] = 
-      "\n".toCharArray();
+      "\r\n".getBytes("Cp1252");
       text[1] = 
-      "\n".toCharArray();
+      "\r\n".getBytes("Cp1252");
       text[2] = 
-      "\n<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n".toCharArray();
+      "\r\n<!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n".getBytes("Cp1252");
       text[3] = 
-      "\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=windows-1252\">\n<title>\nInicio\n</title>\n</head>\n".toCharArray();
+      "\r\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=windows-1252\">\r\n<title>\r\nInicio\r\n</title>\r\n</head>\r\n".getBytes("Cp1252");
       text[4] = 
-      "\n  <nav class=\"navbar navbar-expand-lg navbar-light bg-light\">\n    <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarTogglerDemo03\" aria-controls=\"navbarTogglerDemo03\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n      <span class=\"navbar-toggler-icon\"></span>\n    </button>\n    <div class=\"collapse navbar-collapse\" id=\"navbarNavAltMarkup\">\n      <ul class=\"navbar-nav\">\n        <li class=\"nav-item dropdown\">\n          <a class=\"nav-link dropdown-toggle\" href=\"#\" id=\"navbarDropdownMenuLink\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">\n            Torneos\n          </a>\n          <div class=\"dropdown-menu\" aria-labelledby=\"navbarDropdownMenuLink\">\n            ".toCharArray();
+      "\r\n  <nav class=\"navbar navbar-expand-lg navbar-dark bg-primary\">\r\n    <a class=\"navbar-brand\" href=\"#\">Grand Slam</a>\r\n    <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarTogglerDemo03\" aria-controls=\"navbarTogglerDemo03\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\r\n      <span class=\"navbar-toggler-icon\"></span>\r\n    </button>\r\n    <div class=\"collapse navbar-collapse\" id=\"navbarNavAltMarkup\">\r\n      <ul class=\"navbar-nav mr-auto\">\r\n        <li class=\"nav-item dropdown\">\r\n          <a class=\"nav-link dropdown-toggle\" href=\"#\" id=\"navbarDropdownMenuLink\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">\r\n            Torneos\r\n          </a>\r\n          <div class=\"dropdown-menu\" aria-labelledby=\"navbarDropdownMenuLink\">\r\n            ".getBytes("Cp1252");
       text[5] = 
-      "\n            ".toCharArray();
+      "\r\n            ".getBytes("Cp1252");
       text[6] = 
-      "\n          </div>\n        </li>\n        <li class=\"nav-item dropdown\">\n          <a class=\"nav-link dropdown-toggle\" href=\"#\" id=\"navbarDropdownMenuLink\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">\n            Árbitros\n          </a>\n          <div class=\"dropdown-menu\" aria-labelledby=\"navbarDropdownMenuLink\">\n            ".toCharArray();
+      "\r\n          </div>\r\n        </li>\r\n        <li class=\"nav-item dropdown\">\r\n          <a class=\"nav-link dropdown-toggle\" href=\"#\" id=\"navbarDropdownMenuLink\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">\r\n            Árbitros\r\n          </a>\r\n          <div class=\"dropdown-menu\" aria-labelledby=\"navbarDropdownMenuLink\">\r\n            ".getBytes("Cp1252");
       text[7] = 
-      "\n            ".toCharArray();
+      "\r\n            ".getBytes("Cp1252");
       text[8] = 
-      "\n          </div>\n        </li>\n        <li class=\"nav-item dropdown\">\n          <a class=\"nav-link dropdown-toggle\" href=\"#\" id=\"navbarDropdownMenuLink\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">\n            Equipos\n          </a>\n          <div class=\"dropdown-menu\" aria-labelledby=\"navbarDropdownMenuLink\">\n            ".toCharArray();
+      "\r\n          </div>\r\n        </li>\r\n        <li class=\"nav-item dropdown\">\r\n          <a class=\"nav-link dropdown-toggle\" href=\"#\" id=\"navbarDropdownMenuLink\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">\r\n            Equipos\r\n          </a>\r\n          <div class=\"dropdown-menu\" aria-labelledby=\"navbarDropdownMenuLink\">\r\n            ".getBytes("Cp1252");
       text[9] = 
-      "\n            ".toCharArray();
+      "\r\n            ".getBytes("Cp1252");
       text[10] = 
-      "\n          </div>\n        </li>\n        <li class=\"nav-item dropdown\">\n          <a class=\"nav-link dropdown-toggle\" href=\"#\" id=\"navbarDropdownMenuLink\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">\n            Partidos\n          </a>\n          <div class=\"dropdown-menu\" aria-labelledby=\"navbarDropdownMenuLink\">\n            ".toCharArray();
+      "\r\n          </div>\r\n        </li>\r\n        <li class=\"nav-item dropdown\">\r\n          <a class=\"nav-link dropdown-toggle\" href=\"#\" id=\"navbarDropdownMenuLink\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">\r\n            Partidos\r\n          </a>\r\n          <div class=\"dropdown-menu\" aria-labelledby=\"navbarDropdownMenuLink\">\r\n            ".getBytes("Cp1252");
       text[11] = 
-      "\n          </div>\n        </li>\n      </ul>\n        <ul class=\"navbar-nav\">\n          <li class=\"nav-item dropdown\">\n            <a class=\"nav-link dropdown-toggle\" href=\"#\" id=\"navbarDropdownMenuLink\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">\n              Bienvenido Admin\n            </a>\n            <div class=\"dropdown-menu\" aria-labelledby=\"navbarDropdownMenuLink\">\n              ".toCharArray();
+      "\r\n          </div>\r\n        </li>\r\n      </ul>\r\n      <div class=\"form-inline my-2 my-lg-0\">\r\n        <ul class=\"navbar-nav\">\r\n          <li class=\"nav-item dropdown\">\r\n            <a class=\"nav-link dropdown-toggle\" href=\"#\" id=\"navbarDropdownMenuLink\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">\r\n              Bienvenido Admin\r\n            </a>\r\n            <div class=\"dropdown-menu\" aria-labelledby=\"navbarDropdownMenuLink\">\r\n              ".getBytes("Cp1252");
       text[12] = 
-      "\n            </div>\n          </li>\n        </ul>\n\n    </div>\n  </nav>\n\n".toCharArray();
+      "\r\n            </div>\r\n          </li>\r\n        </ul>\r\n      </div>\r\n    </div>\r\n  </nav>\r\n\r\n".getBytes("Cp1252");
       text[13] = 
-      "\n<body>\nhola Mundo\n".toCharArray();
+      "\r\n<body>\r\nhola Mundo\r\n".getBytes("Cp1252");
       text[14] = 
-      "\n</body>\n</html>\n".toCharArray();
+      "\r\n</body>\r\n</html>\r\n".getBytes("Cp1252");
       }
       catch (Throwable th) {
         System.err.println(th);
