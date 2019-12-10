@@ -33,6 +33,7 @@
          <encoding>windows-1252</encoding>
       </Item>
       <Item class="oracle.jdeveloper.model.JavaSourceNode">
+<<<<<<< HEAD
          <URL path="src/mypackage1/InicioForm.java"/>
       </Item>
       <Item class="oracle.jdeveloper.model.JavaSourceNode">
@@ -61,6 +62,18 @@
       <Item class="oracle.jdeveloper.model.JspSourceNode">
          <URL path="public_html/partidos.jsp"/>
          <encoding>windows-1252</encoding>
+=======
+         <URL path="src/mypackage1/ConnectDB.java"/>
+      </Item>
+      <Item class="oracle.jdeveloper.model.JavaSourceNode">
+         <URL path="src/mypackage1/ActionTorneo.java"/>
+      </Item>
+      <Item class="oracle.jdeveloper.model.JavaSourceNode">
+         <URL path="src/mypackage1/ActionFormTorneo.java"/>
+      </Item>
+      <Item class="oracle.jdeveloper.model.JavaSourceNode">
+         <URL path="src/mypackage1/ClaseTorneo.java"/>
+>>>>>>> d4ffd1fb6583cb5440697803bb8a93884cc1a333
       </Item>
    </listOfChildren>
    <ownerMap/>
@@ -171,7 +184,7 @@
                      <Value class="oracle.jdevimpl.config.JProjectLibraries">
                         <jdkName>1.3.1_02</jdkName>
                         <jdkVersionNumber>1.3.1_02</jdkVersionNumber>
-                        <libraries>JDeveloper Runtime;JSP Runtime;Struts Runtime;Servlet Runtime</libraries>
+                        <libraries>JDeveloper Runtime;JSP Runtime;Struts Runtime;Servlet Runtime;Oracle JDBC</libraries>
                      </Value>
                   </Item>
                   <Item>

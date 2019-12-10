@@ -64,13 +64,14 @@ public class _inicio extends com.orionserver.http.OrionHttpJspPage {
       /*@lineinfo:translated-code*//*@lineinfo:13^1*/      {
         org.apache.struts.taglib.html.FormTag __jsp_taghandler_2=(org.apache.struts.taglib.html.FormTag)OracleJspRuntime.getTagHandler(pageContext,org.apache.struts.taglib.html.FormTag.class,"org.apache.struts.taglib.html.FormTag action");
         __jsp_taghandler_2.setParent(null);
-        __jsp_taghandler_2.setAction("/menu");
+        __jsp_taghandler_2.setAction("/torneo");
         __jsp_tag_starteval=__jsp_taghandler_2.doStartTag();
         if (OracleJspRuntime.checkStartTagEval(__jsp_tag_starteval))
         {
           do {
             /*@lineinfo:generated-code*/
             __ojsp_s_out.write(__jsp_StaticText.text[4]);
+<<<<<<< HEAD
             /*@lineinfo:translated-code*//*@lineinfo:26^13*/            {
               org.apache.struts.taglib.html.SubmitTag __jsp_taghandler_3=(org.apache.struts.taglib.html.SubmitTag)OracleJspRuntime.getTagHandler(pageContext,org.apache.struts.taglib.html.SubmitTag.class,"org.apache.struts.taglib.html.SubmitTag property styleClass value");
               __jsp_taghandler_3.setParent(__jsp_taghandler_2);
@@ -248,6 +249,9 @@ public class _inicio extends com.orionserver.http.OrionHttpJspPage {
             /*@lineinfo:generated-code*/
             __ojsp_s_out.write(__jsp_StaticText.text[12]);
           /*@lineinfo:translated-code*//*@lineinfo:63^95*/          } while (__jsp_taghandler_2.doAfterBody()==javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN);
+=======
+          /*@lineinfo:translated-code*//*@lineinfo:13^29*/          } while (__jsp_taghandler_2.doAfterBody()==javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN);
+>>>>>>> d4ffd1fb6583cb5440697803bb8a93884cc1a333
         }
         if (__jsp_taghandler_2.doEndTag()==javax.servlet.jsp.tagext.Tag.SKIP_PAGE)
           return;
